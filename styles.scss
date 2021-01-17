@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+$orange : #e4520b;
+$black: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+background: $black;
+color: $orange;
+font-weight: 300;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.tea-grid {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  place-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.tea-grid-item {
+  position: relative;
+  margin: 30px;
+}
+
+.tea-grid-item:hover {
+  cursor: pointer;
+}
+
+.tea-cup {
+  width: auto;
+  height: 200px;
+  
+}
+
+.coffee {
+  color: $orange !important;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.tea-text {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;  
+}
